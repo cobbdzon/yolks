@@ -42,4 +42,4 @@ jobs:
           push: true
           tags: |
             ghcr.io/${{ steps.lower-repo.outputs.repository }}/yolks:mono_${{ matrix.tag }}
-            ${{ github.repository_owner == 'pelican-eggs' && format('ghcr.io/cobbdzon/yolks:mono_{0}', matrix.tag) || '' }}
+            ${{ github.repository_owner == 'cobbdzon' && format('ghcr.io/cobbdzon/yolks:mono_{0}', matrix.tag) || '' }}
